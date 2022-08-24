@@ -13,10 +13,13 @@
             "args": [
                 // "-help"
                 "-type=qrcode",
-                "-link=74ddc165-21d3-4612-99da-edac801d723e",
-                "-content=https://refactoring.guru",
-                "-width=95",
-                "-height=95",
+                // "-type=ean",
+                "-path=temp/2005-06-06",
+                "-link=testest.png",
+                "-content=777777777777",
+                // "-content=https://refactoring.guru",
+                "-width=190",
+                "-height=100",
             ]
         }
     ]

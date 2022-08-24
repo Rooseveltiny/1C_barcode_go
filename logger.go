@@ -6,7 +6,6 @@ import (
 )
 
 func writeDownLogMessage(msg string, err error) {
-
 	var errorMsg string
 	if err != nil {
 		errorMsg = err.Error()

@@ -1,11 +1,1 @@
-App logger!23:33:54 error initializing barcode. Check given args.   invalid ean code data
-App logger!23:39:50 unknown barcode type!   
-App logger!23:40:12 barcode wasn't scaled probably given incorrect width or height! height is 1; width is 95   can not scale barcode to an image smaller than 25x25
-App logger!23:57:49 file wasn't created!   open 2022/8/22/74ddc145-21d3-4612-99ca-edac801d723e.png: no such file or directory
-App logger!23:57:56 file wasn't created!   open 2022/8/22/74ddc145-21d3-4612-99ca-edac801d723e.png: no such file or directory
-App logger!23:58:03 file wasn't created!   open 2022/8/22/74ddc145-21d3-4612-99ca-edac801d723e.png: no such file or directory
-App logger!23:58:22 file wasn't created!   open 2022/8/22/74ddc145-21d3-4612-99ca-edac801d723e.png: no such file or directory
-App logger!00:08:02 file wasn't created!   open temp/2022-8-23/74ddc165-21d3-4612-99da-edac801d723e.png: no such file or directory
-App logger!00:08:22 file wasn't created!   open temp/2022-8-23/74ddc165-21d3-4612-99da-edac801d723e.png: no such file or directory
-App logger!00:08:41 file wasn't created!   open temp/2022-8-23/74ddc165-21d3-4612-99da-edac801d723e.png: no such file or directory
-App logger!00:11:50 couldn't create a folder   mkdir temp/2022-8-23: file exists
+App logger!16:54:32 unknown barcode type!   
