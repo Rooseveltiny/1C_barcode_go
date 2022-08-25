@@ -43,10 +43,6 @@ func PerformScale(bc *barcode.Barcode) {
 
 }
 
-func PerformConvertingBarcodeToPng24Image(bc barcode.Barcode) image.Image {
-
-}
-
 func PerformFileSaving(bc image.Image) {
 	file, err := os.Create(fmt.Sprintf("%s/%s", barcodePath, barcodeLink))
 	if err != nil {
