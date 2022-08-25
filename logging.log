@@ -1,1 +1,13 @@
 App logger!16:54:32 unknown barcode type!   
+App logger!20:12:23 error initializing barcode. Check given args.   can not encode "777777777777"
+App logger!20:12:44 error initializing barcode. Check given args.   can not encode "777777777777"
+App logger!20:14:15 unknown barcode type!   
+App logger!20:14:21 unknown barcode type!   
+App logger!20:15:04 error initializing barcode. Check given args.   can not encode "777777777777"
+App logger!20:22:11 barcode wasn't scaled probably given incorrect width or height! height is 100; width is 190   can not scale barcode to an image smaller than 337x1
+App logger!20:22:32 barcode wasn't scaled probably given incorrect width or height! height is 100; width is 190   can not scale barcode to an image smaller than 337x1
+App logger!20:23:30 barcode wasn't scaled probably given incorrect width or height! height is 100; width is 190   can not scale barcode to an image smaller than 350x1
+App logger!20:24:17 barcode wasn't scaled probably given incorrect width or height! height is 100; width is 190   can not scale barcode to an image smaller than 253x1
+App logger!20:24:56 barcode wasn't scaled probably given incorrect width or height! height is 100; width is 190   can not scale barcode to an image smaller than 253x1
+App logger!20:31:34 barcode wasn't scaled probably given incorrect width or height! height is 100; width is 190   can not scale barcode to an image smaller than 225x1
+App logger!20:31:42 barcode wasn't scaled probably given incorrect width or height! height is 100; width is 190   can not scale barcode to an image smaller than 225x1

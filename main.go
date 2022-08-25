@@ -9,8 +9,15 @@ import (
 	"os"
 
 	"github.com/boombuler/barcode"
+	"github.com/boombuler/barcode/codabar"
+	"github.com/boombuler/barcode/code128"
+	"github.com/boombuler/barcode/code39"
+	"github.com/boombuler/barcode/code93"
+	"github.com/boombuler/barcode/datamatrix"
 	"github.com/boombuler/barcode/ean"
+	"github.com/boombuler/barcode/pdf417"
 	"github.com/boombuler/barcode/qr"
+	"github.com/boombuler/barcode/twooffive"
 )
 
 var (
@@ -60,13 +67,25 @@ func PerformBarcode() {
 
 	switch barcodeType {
 	case "ean":
-		func() {
-			barcodeItem, errorBarcodeCreation = ean.Encode(barcodeContent)
-		}()
+		barcodeItem, errorBarcodeCreation = ean.Encode(barcodeContent)
 	case "qrcode":
-		func() {
-			barcodeItem, errorBarcodeCreation = qr.Encode(barcodeContent, qr.M, qr.Auto)
-		}()
+		barcodeItem, errorBarcodeCreation = qr.Encode(barcodeContent, qr.M, qr.Auto)
+	case "codabar":
+		barcodeItem, errorBarcodeCreation = codabar.Encode(barcodeContent)
+	case "code128":
+		barcodeItem, errorBarcodeCreation = code128.Encode(barcodeContent)
+	case "code39":
+		barcodeItem, errorBarcodeCreation = code39.Encode(barcodeContent, true, true)
+	case "code93":
+		barcodeItem, errorBarcodeCreation = code93.Encode(barcodeContent, true, true)
+	case "datamatrix":
+		barcodeItem, errorBarcodeCreation = datamatrix.Encode(barcodeContent)
+	case "pdf417":
+		barcodeItem, errorBarcodeCreation = pdf417.Encode(barcodeContent, 4)
+	case "2of5":
+		barcodeItem, errorBarcodeCreation = twooffive.Encode(barcodeContent, false)
+	case "2of5interleaved":
+		barcodeItem, errorBarcodeCreation = twooffive.Encode(barcodeContent, true)
 	default:
 		writeDownLogMessage("unknown barcode type!", nil)
 	}

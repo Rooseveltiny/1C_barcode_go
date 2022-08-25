@@ -8,6 +8,12 @@
 *.so
 *.dylib
 *.log
+*.png
+*.jpg
+*.jpeg
+*.gif
+
+temp/
 
 # Test binary, built with `go test -c`
 *.test
