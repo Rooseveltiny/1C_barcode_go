@@ -33,7 +33,7 @@ func init() {
 	flag.StringVar(&barcodeType, "type", "ean", "set type of barcode which should be performed. I.e. ean or qrcode or code128.")
 	flag.StringVar(&barcodeLink, "link", "", "barcode name of a png file. should be uuidv4 or guid.")
 	flag.StringVar(&barcodePath, "path", "", "path to prepeared image in some folder of a file system.")
-	flag.StringVar(&barcodeContent, "content", "", "content for barcode, for ean it should be letters, for qrcode it can be any text.")
+	flag.StringVar(&barcodeContent, "content", "", "content for barcode, for ean it should be digits, for qrcode it can be any text.")
 	flag.IntVar(&barcodeWidth, "width", 100, "setting width of barcode png image.")
 	flag.IntVar(&barcodeHeight, "height", 100, "setting height of barcode png image.")
 	flag.Parse()
@@ -96,6 +96,7 @@ func PerformBarcode() {
 
 	// scale given barcode
 	PerformScale(&barcodeItem)
+
 	// make a content text underneath a given barcode
 	var barcodeToSave image.Image
 	if barcodeItem.Metadata().CodeKind != "QR Code" {

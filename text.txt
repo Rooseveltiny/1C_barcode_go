@@ -1,6 +1,0 @@
-C:\Users\Saveliy2\Desktop\test\barcode_go.exe 
--link="031ba4cf-0b35-438d-b4fb-7ff9c0372f1e.png" 
--type=qrcode 
--path="C:\Users\Saveliy2\Desktop\test\temp\2022-08-24" 
--content="https://facebook.com" 
--width=190 -height=100
